@@ -1,0 +1,500 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="admin.example.com.SubTopics.Prob.BALLS">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:visibility="visible">
+
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="500dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="30dp"
+            android:minHeight="50dp">
+
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_toEndOf="@id/ivContactItem2"
+                android:layout_toRightOf="@id/ivContactItem2"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question  1 :\nA man takes 5 hours 45 min in walking to a certain place and riding back. He would have gained 2 hours by riding both ways. The time he would take to walk both ways is
+
+
+"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv1"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_toEndOf="@id/ivContactItem2"
+                android:layout_toRightOf="@id/ivContactItem2"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solutions –\n
+Given that time taken for riding both ways will be 2 hours lesser than the time needed for waking one way and riding back.\n
+
+Therefore,\n
+time needed for riding one way = time needed for waking one way - 2 hours\n
+
+Given that time taken in walking one way and riding back =5 hours 45 min\n
+
+Hence, the time he would take to walk both ways\n
+=5 hours 45 min + 2 hours\n
+=7 hours 45 min\n
+\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121" />
+
+            <include
+                android:id="@+id/div1"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv11" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div1"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 2:\nA person crosses a 600 metre long street in 5 minutes. What is his speed in km per hour?
+
+"              android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv2"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+
+Distance =600 metre =0.6 km\n
+
+Time =5 minutes =1/12 hour\n
+
+Speed=distancetime=0.6/(1/12) =7.2 km\n
+
+\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div2"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv22" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div2"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 3:\nA and B walk around a circular track. A and B walk at a speed of 2 rounds per hour and 3 rounds per hour respectively. If they start at 8 a.m. from the same point in opposite directions, how many times shall they cross each other before 9.30 a.m.?
+
+"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv3"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+Relative speed = Speed of A + Speed of B (∴ they walk in opposite directions)\n
+=2+3=5 rounds per hour\n
+
+Therefore, they cross each other 5 times in 1 hour and 2 times in 12 hour\n
+\n
+Time duration from 8 a.m. to 9.30 a.m. =1.5 hour
+\n
+Hence they cross each other 7 times before 9.30 a.m.
+
+\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div3"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv33" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div3"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 4.\nTwo boys starts from the same place walking at the rate of 5 kmph and 5.5 kmph respectively in the same direction. What time will they take to be 8.5 km apart?
+
+"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv4"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+
+relative speed =5.5−5=0.5 kmph (because they walk in the same direction)\n
+distance =8.5 km\n
+
+time=distancespeed=8.5/0.5=17 hr\n
+
+\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div4"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv44" />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div4"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 5.\nA man travelled a distance of 61 km in 9 hours. He travelled partly on foot at 4 km/hr and partly on bicycle at 9 km/hr. What is the distance travelled on foot?
+"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv5"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\nLet the time in which he travelled on foot =x hr\n
+Then the time in which he travelled on bicycle =(9−x) hr
+\n
+distance = speed × time\\n
+⇒4x+9(9−x)=61⇒4x+81−9x=61⇒5x=20⇒x=4
+\n
+Distance travelled on foot\n
+=4x=4×4=16 km\n
+
+ \n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div5"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv55" />
+
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div5"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 6.\nA man goes to his office from his house at a speed of 3 km/hr and returns at a speed of 2 km/hr. If he takes 5 hours in going and coming, what is the distance between his house and office?
+
+
+
+ "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv6"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+Ratio of his speed =3:2\n
+Therefore, ratio of the time taken =2:3\n
+
+Since total time taken is 5 hours, he has taken 2 hours to travel to his office and 3 hours to come back.
+\n
+Distance between his house and office\n
+=2×3\n=6 km\n
+\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div6"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv66" />
+
+
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div6"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 7.\nA man in a train notices that he can count 21 telephone posts in one minute. If they are known to be 50 metres apart, at what speed is the train travelling?
+
+
+
+"                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv77"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv7"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+The man can count 21 telephone posts in one minute. \n
+Number of gaps between 21 posts is 20 and adjacent posts are 50 metres apart.\n
+
+It means 20×50=1000 metres are covered in 1 minute.\n
+
+distance =1000 m=1 km\n
+
+time =1 min=1/60 hr\n
+
+speed =1(1/60)=60 km/hr\n
+\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div7"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv77" />
+
+
+            <TextView
+                android:id="@+id/tv8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div7"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 8.\nA person has to cover a distance of 6 km in 45 minutes. If he covers one-half of the distance in two-thirds of the total time, to cover the remaining distance in the remaining time, what should be his speed in km/hr?
+
+
+"
+
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv88"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv8"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solutions ;\n
+he person needs to cover 6 km in 45 minutes\n
+
+Given that he covers one-half of the distance in two-thirds of the total time\n
+⇒ he covers half of 6 km in two-thirds of 45 minutes\n
+⇒ He covers 3 km in 30 minutes
+\n
+Now he needs to cover the remaining 3 km in remaining 15 minutes\n
+Distance =3 km\n
+
+Time =15 minutes \n=1/4 hour\n
+
+Required Speed \n=3(1/4)\n=12 km/hr\n
+
+\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div8"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv88" />
+
+            <TextView
+                android:id="@+id/tv9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div8"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 9.\nIf a person walks at 14 km/hr instead of 10 km/hr, he would have walked 20 km more. What is the actual distance travelled by him?
+
+"
+                android:textColor="#212121"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <TextView
+                android:id="@+id/tv99"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv9"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+Let distance =x km\n
+
+x:(x+20)=10:14=5:7
+\n
+⇒7x=5x+100
+\n
+⇒2x=100
+\n
+⇒x=50
+
+\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div9"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv99" />
+
+
+            <TextView
+                android:id="@+id/tv10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div9"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 10.\nA person travels from A to B at a speed of 40 km/hr and returns by increasing his speed by 50%. What is his average speed for both the trips?
+
+
+
+ "                android:textColor="#212121"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <TextView
+                android:id="@+id/tv100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv10"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+Speed from A to B \n=40 km/hr\n
+
+Speed from B to A \n=40+20=60 km/hr\n
+
+Average Speed =(2×40×60)/(40+60)\n=48 km/hr\n
+
+\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div10"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv100" />
+
+
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

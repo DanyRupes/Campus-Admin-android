@@ -1,0 +1,133 @@
+<resources>
+    <string name="app_name">Campus Plus</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Details</string>
+
+    <string name="action_select">Pick</string>
+    <string name="title_activity_main2">Sample Programs</string>
+    <string name="sici">Interest Calculations</string>
+    <string name="home">H O M E</string>
+    <string name="numsys">Number System</string>
+    <string name="timwrk">Time and Work</string>
+    <string name="percent">Percentage</string>
+    <string name="btstream">Boats and Stream</string>
+    <string name="avg">Average</string>
+    <string name="age">Ages</string>
+    <string name="timspdis">Time/Speed/Distance</string>
+    <string name="tutorial">Tutorial</string>
+    <string name="samprg">Sample Programs</string>
+    <string name="navhead">Campus Plus</string>
+
+    <string name="title_activity_details">Details</string>
+
+    <string name="title_activity_home">Campus Plus</string>
+    <string name="pa">Placement Activities</string>
+    <string name="pahead">Placement</string>
+    <string name="basics_of_ages">Basics of Ages</string>
+    <string name="number_system">Number System</string>
+    <string name="simple_compound_interest">Simple/Compound Interest</string>
+    <string name="time_and_work">Time and Work</string>
+    <string name="percentage">Percentage</string>
+    <string name="boats_and_stream">Boats and Stream</string>
+    <string name="average">Average</string>
+    <string name="time_speed_distance">Time/Speed/Distance</string>
+    <string name="exit">EXIT</string>
+
+
+    <string name="log_in_to_aharwaala">Log In</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="don_t_hanve_an_account_click_here">Don\'t hanve an Account? Click here</string>
+    <string name="sign_in">Sign In</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_an_account_log_in">Already Have an Account? Log In</string>
+
+    <string name="err_msg_email">Enter a valid email.</string>
+    <string name="err_msg_required">Required !!</string>
+    <string name="err_msg_password">Enter a valid password with min 6 characters.</string>
+    <string name="auth_failed">Authentication error, Please enter a valid email and password or sign up</string>
+    <string name="signout">Sign_out</string>
+    <string name="button">Button</string>
+    <string name="log_in">Log In</string>
+    <string name="login">LogIn</string>
+
+
+    <string name="action_add_favourite">Add to Favourites</string>
+    <string name="action_play_next">Play Next</string>
+    <string name="backdrop_title">C A M P U S   P L U S</string>
+    <string name="backdrop_subtitle">This season top 10 NEWS </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ratios">Ratios</string>
+    <string name="mixtures_amp_aligators"><![CDATA[Mixtures & Aligators]]></string>
+    <string name="permutations_amp_combinations"><![CDATA[Permutations & Combinations]]></string>
+    <string name="probability">Probability</string>
+
+
+
+    <string name="x1">1) A, P, R, X, S and Z are sitting in a row. S and Z are in the centre. A and P are at the ends.
+        R is sitting to the left of A. Who is to the right of P ?</string>
+    <string name="y1">Explanation:
+The seating arrangement is as follows:\n
+*   *   *   *   *   *\n
+P   X   S   Z   R   A
+Therefore, right of P is X.</string>
+    <string name="x2">2) A, B, C, D and E are sitting on a bench. A is sitting next to B, C is sitting next to D, D is not sitting with E who is on the left end of the bench.
+        C is on the second position from the right.
+        A is to the right of B and E. A and C are sitting together. In which position A is sitting ?</string>
+    <string name="y2">
+        Explanation:\n
+        *   *   *   *   *\n
+        E   B   A   C   D
+Therefore, A is sitting in between B and C.
+    </string>
+    <string name="x3">3) A ,B, C, D and E are five men sitting in a line facing to south - while M, N, O, P and Q are five ladies sitting in a second line parallel to the first line and are facing to North.
+B who is just next to the left of D, is opposite to Q.
+C and N are diagonally opposite to each other.
+E is opposite to O who is just next right of M.
+P who is just to the left of Q, is opposite to D.
+M is at one end of the line.</string>
+    <string name="y3">Explanation:
+
+    </string>
+    <string name="x4">
+        There are 8 houses in a line and in each house only one boy lives with the conditions as given below:
+Jack is not the neighbour Siman.
+Harry is just next to the left of Larry.
+There is at least one to the left of Larry.
+Paul lives in one of the two houses in the middle.
+Mike lives in between Paul and Larry.
+           If at least one lives to the right of Robert and Harry is not between Taud and Larry, then which one of the following statement is not correct ?
+[A]Robert is not at the left end.
+[B]	Robert is in between Simon and Taud.
+[C]Taud is in between Paul and Jack.
+[D]	There are three persons to the right of Paul.
+    </string>
+    <string name="y4">
+        The arrangement should be in:
+harry, taud, larry, mike, paul, siman, robert, jack.
+The conditions are:
+1. Jack is not the neighbour Siman.
+2. Harry is just next to the left of Larry.
+3. There is at least one to the left of Larry.
+4. Paul lives in one of the two houses in the middle.
+5. Mike lives in between Paul and Larry.
+6. one lives to the right of Robert that is jack.
+7. Harry is not between Taud and Larry so taud is between them.
+so [c] is incorrct.
+    </string>
+    <string name="x5">
+         5) Five girls are sitting on a bench to be photographed.
+    Seema is to the left of Rani and to the right of Bindu. Mary is to the right of Rani. Reeta is between Rani and Mary.
+    </string>
+    <string name="y5">
+       Explanation:\n
+        *        *      *        *      *"\n"
+        Bindu  Seema   Rani    Reeta   Mary
+Seema is sitting second from the left in photograph.
+    </string>
+
+</resources>

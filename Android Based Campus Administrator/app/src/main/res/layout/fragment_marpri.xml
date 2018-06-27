@@ -1,0 +1,616 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="admin.example.com.SubTopics.Prob.BALLS">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:visibility="visible">
+
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="500dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="30dp"
+            android:minHeight="50dp">
+
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_toEndOf="@id/ivContactItem2"
+                android:layout_toRightOf="@id/ivContactItem2"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question  1 :\n
+The marked price of a ceiling fan is $ 1250 and the shopkeeper allows a discount of 6% on it. Find the selling price of the fan."
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv1"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_toEndOf="@id/ivContactItem2"
+                android:layout_toRightOf="@id/ivContactItem2"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solutions –\n
+Marked price = $ 1250 and discount = 6%. \n
+
+Discount = 6% of Marked Price
+\n
+                = (6% of $ 1250)
+\n
+                = $ {1250 × (6/100)}
+\n
+                = $ 75
+\n
+Selling price = (Marked Price) - (discount)
+\n
+                      = $ (1250 - 75)
+\n
+                      = $ 1175.
+\n
+Hence, the selling price of the fan is $ 1175.
+\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121" />
+
+            <include
+                android:id="@+id/div1"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv11" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div1"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 2:\n
+ A  trader marks his goods at 40% above the cost price and allows a discount of 25%. What is his gain percent? "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv2"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+Let the cost price be $ 100.
+\n
+Then, marked price = $ 140. \n
+Discount = 25% of Marked Price
+\n
+                = (25% of $ 140)
+\n
+                = $ {140 × (25/100)
+\n
+                = $ 35.
+\n
+Selling price = (marked price) - (discount)
+\n
+                      = $ (140 - 35)
+\n
+                      = $ 105.
+\n
+Gain% = (105 - 100) % = 5%.
+\n
+Hence, the trader gains 5%.
+
+\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div2"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv22" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div2"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 3:\n
+A dealer purchased a washing machine for $ 7660. He allows a discount of 12% on its marked price and still gains 10%. Find the marked price of the machine. "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv3"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+Therefore, selling price = [{(100 + gain%)/100} × CP]
+\n
+                                     = $ [{(100 + 10)/100} × 7660]
+\n
+                                     = $ [(110/100) × 7660]
+\n
+                                     = $ 8426.
+\n
+Let the marked price be $ x.
+\n
+Then, the discount = 12% of $x
+\n
+                               = $ {x × (12/100)}
+\n
+                               = $ 3x/25
+\n
+Therefore, SP = (Marked Price) - (discount)
+\n
+                       = $ (x - 3x/25)
+\n
+                       = $ 22x/25.
+\n
+But, the SP = $ 8426.
+\n
+Therefore, 22x/25 = 8426
+\n
+⇒ x = (8426 × 25/22)
+\n
+⇒ x = 9575.
+\n
+Hence, the marked price of the washing machine is $ 9575.
+\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div3"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv33" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div3"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 4.\n
+ How much per cent above the cost price should a shopkeeper mark his goods so that after allowing a discount of 25% on the marked price, he gains 20%? "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv4"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+Let the cost price be $ 100.
+\n
+Gain required = 20%.
+\n
+Therefore, selling price = $ 120.
+\n
+Let the marked price be $x.
+\n
+Then, discount = 25% of $x
+\n
+                         = $ (x × 25/100)
+\n
+                         = $ x/4
+\n
+Therefore, selling price = (Marked Price) - (discount)
+\n
+                                     = $ {x - (x/4)
+
+                                 \n    = $ 3x/4\n
+
+Therefore, 3x/4 = 120\n
+
+⇔ x = {120 × (4/3)} = 160\n
+
+Therefore, marked price = $ 160.
+\n
+Hence, the marked price is 60% above cost price.
+\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div4"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv44" />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div4"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 5.\n
+The marked price of a jeans is Rs 800 and there is a discount of 12% on this item. What will be the selling price of jeans?"               android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv5"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+Marked price of jeans = Rs 800\n
+Discount = 12%
+\n
+Hence, discount = 12% of Marked Price = 12% of Rs 800
+\n
+=0.12 * 800
+\n
+= Rs 96
+\n
+Now, as we know that Selling Price = Marked Price – Discount
+\n
+= 800 – 96
+\n
+= 704 Rs
+\n
+Hence, Selling Price of Jeans = Rs 704 Answer \n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div5"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv55" />
+
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div5"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 6.\n
+Jethalal bought a Nokia mobile phone @ Rs. 800. He sold it to Master Bhide after allowing a discount of 10%. In this deal, Jethalal made a profit of 12.5%. What was the marked price?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv6"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+ Jethalal’s profit is Rs.100\n
+Therefore\n
+100=0.9 times Marked price – Rs.800\n
+100+800=0.9 times marked price\n
+900=0.9 x MP\n
+MP=900 x 10/9\n
+MP=Rs. 1000.\n
+Final Answer: marked price is Rs.1000\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div6"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv66" />
+
+
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div6"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 7.\n
+A dealer allowed discount of 25% on the marked price of Rs. 12000 on an article and incurred a loss of 10%. What discount should he allow on the marked price so that he gains Rs. 440 on the article?"                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv77"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv7"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+ Let take cost price as x.
+\n
+Marked Price = Rs. 12000,
+\n
+Discount = 25%
+\n
+Selling price = [(100 - loss%)/100] * C.P.
+\n
+= [(100 - 25)/100] * 12000.
+\n
+= (75 * 12000)/100 = 9000.
+\n
+Selling price = Rs. 9000.
+\n
+Loss 10%.
+\n
+So, S.P = [(100 - loss%/100)] * C.P.
+\n
+= (100 - 10x)/100.
+\n
+90x/100 = 9000.
+\n
+x = 10000.
+\n
+So C.P = Rs. 10000
+\n
+For gain: S.P = 10000 + 440 = 10440.
+\n
+Discount percentage:
+\n
+[(12000 - 10440)/12000] * 100 = 13%
+\n
+Discount on marked price is 13%
+\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div7"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv77" />
+
+
+            <TextView
+                android:id="@+id/tv8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div7"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 8.\n
+A quality pen that normally costs $20 is being sold for only $12.
+Calculate the discount in dollars, and also as a percentage of the marked price.
+"               android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv88"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv8"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solutions ;\n
+selling price = marked price - discount
+\n
+so discount = marked price - selling price
+\n
+                       =   $20 - $12
+\n
+                       =   $8
+\n
+Expressing the discount as a percentage of the marked price:
+
+\n
+
+     discount% =  $discount/$marked price × 100%
+
+\n
+
+
+
+                discount% =   $8/$20 × 100% \n   =    40%
+ \n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div8"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv88" />
+
+            <TextView
+                android:id="@+id/tv9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div8"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 9.\n
+
+The usual price for an adult movie ticket at Big Screen Cinemas is $18.
+On Tuesdays they offer a 15% discount.
+
+Calculate the cash value of the discount, and the cost of the tickets on Tuesdays."
+                android:textColor="#212121"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <TextView
+                android:id="@+id/tv99"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv9"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+discount = 15% of marked price
+\n
+
+                                  =  15/100 × (marked price)
+
+
+\n
+
+                                            =  15/100 × $18
+
+
+\n
+
+
+                                            =  $2.70
+
+\n
+
+     So:        (selling price) = (marked price) - discount\n
+
+                                             =  $18 - $2.70
+\n
+                                             =  $15.30
+
+\n
+
+On Tuesdays, the tickets cost $15.30
+\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div9"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv99" />
+
+
+            <TextView
+                android:id="@+id/tv10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div9"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 10.\n
+A music store has reduced all stock by 25%. A customer who purchased a CD from this store paid $24. What is the usual price of this CD, and what is the cash discount.
+"                android:textColor="#212121"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <TextView
+                android:id="@+id/tv100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv10"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+(marked price) = (selling price) + discount\n
+
+Expressing each of these quantities as percentages of the marked price, we have:\n
+
+              marked price                   \n      selling price       \n                     discount
+
+     (100% of the marked price) = (x% of the marked price) + (25% of the marked price)\n
+
+
+
+So the selling price must be: (100-25 = 75)% of the marked price, ie:\n
+ selling price    =     75/100 × (marked price)\n
+
+ So\n
+  marked price   =     100/75 × (selling price)\n
+
+          = 100/75× 24\n
+          =  $32
+\n
+The CD usually costs $32, and the cash discount is: (32-24) = $8.00
+\n\n\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div10"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv100" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

@@ -1,0 +1,107 @@
+{
+  "project_info": {
+    "project_number": "116387146184",
+    "firebase_url": "https://xenon-axe-185820.firebaseio.com",
+    "project_id": "xenon-axe-185820",
+    "storage_bucket": "xenon-axe-185820.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116387146184:android:c37e8f15ca848b81",
+        "android_client_info": {
+          "package_name": "admin.example.com.campus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116387146184-nkpfk1vrbal0dtuqbd1vuns2td3duita.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "admin.example.com.campus",
+            "certificate_hash": "0082d7fd376defb7c8d814c634c0120ed2c0bab5"
+          }
+        },
+        {
+          "client_id": "116387146184-pfa1f7leij4s9sc9umj7ab0i9k34guep.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "116387146184-cj7qtsr6djrhh83le6kr231j066tmgge.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDWbYmRIK1hDiXloXBnhaxYr0y1QewEjw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116387146184-pfa1f7leij4s9sc9umj7ab0i9k34guep.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:116387146184:android:6011d14139c4d51b",
+        "android_client_info": {
+          "package_name": "com.example.admin.campuadmin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "116387146184-l69gdclqrp1n5rhgt7jd390gp8j51alc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.admin.campuadmin",
+            "certificate_hash": "0082d7fd376defb7c8d814c634c0120ed2c0bab5"
+          }
+        },
+        {
+          "client_id": "116387146184-pfa1f7leij4s9sc9umj7ab0i9k34guep.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "116387146184-cj7qtsr6djrhh83le6kr231j066tmgge.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCDWbYmRIK1hDiXloXBnhaxYr0y1QewEjw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "116387146184-pfa1f7leij4s9sc9umj7ab0i9k34guep.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

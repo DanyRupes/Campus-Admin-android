@@ -1,0 +1,479 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="admin.example.com.SubTopics.Prob.BALLS">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:visibility="visible">
+
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="500dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="30dp"
+            android:minHeight="50dp">
+
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_toEndOf="@id/ivContactItem2"
+                android:layout_toRightOf="@id/ivContactItem2"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question  1 :\nIn the first 10 overs of a cricket game, the run rate was only 3.2.
+What should be the run rate in the remaining 40 overs to reach the target of 282 runs?
+\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv1"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_toEndOf="@id/ivContactItem2"
+                android:layout_toRightOf="@id/ivContactItem2"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solutions –\n
+Runs scored in the first 10 overs = 10 × 3.2 = 32\n
+Total runs = 282
+\n
+Remaining runs to be scored = 282 - 32 = 250\n
+Remaining overs = 40\n
+
+Run rate needed = 250/40=6.25
+ \n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121" />
+
+            <include
+                android:id="@+id/div1"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv11" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div1"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 2:\n
+A grocer has a sale of Rs. 6435, Rs. 6927, Rs. 6855, Rs. 7230 and Rs. 6562 for 5 consecutive months.
+How much sale must he have in the sixth month so that he gets an average sale of Rs. 6500?
+"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv2"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+Let the sale in the sixth month =x
+\n
+Then (6435+6927+6855+7230+6562+x)/6 =6500\n
+
+=> 6435+6927+6855+7230+6562+x =6×6500\n
+
+=> 34009+x=39000\n
+=> x=39000−34009=4991
+
+\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div2"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv22" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div2"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 3:\n
+The average of 20 numbers is zero. Of them, How many of them may be greater than zero, at the most?
+"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv3"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\nAverage of 20 numbers = 0
+\n
+=> Sum of 20 numbers/20=0\n
+
+
+=> Sum of 20 numbers = 0\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div3"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv33" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div3"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 4.\n
+Average of squares of first ‘n’ natural numbers\nWhat is the average of the squares of the first 10 natural numbers?
+
+"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv4"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+Average= 38.5
+\n\n
+2nd Method:\n
+1,4,9,16,25,36,49,64,81,100\n
+Sum of numbers=385, Total number=10\n
+Average= 38.5
+ \n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div4"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv44" />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div4"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 5.\n
+A student's mark was wrongly entered as 83 instead of 63.
+Due to that the average marks for the class got increased by 12.
+ What is the number of students in the class?
+ "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv5"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+Let the total number of students = x
+
+\n
+The average marks increased by 1/2 due to an increase of 83 - 63 = 20 marks.
+\n
+But total increase in the marks = 1/2×x=x/2
+\n
+Hence we can write as\n
+x/2=20\n
+⇒x=20×2=40\n
+\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div5"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv55" />
+
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div5"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 6.\n
+The average salary of all the workers in a workshop is Rs.8000.
+ The average salary of 7 technicians is Rs.12000 and the average salary of the rest is Rs.6000.
+ How many workers are there in the workshop?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv6"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+Let the number of workers = x
+\n
+Given that average salary of all the workers = Rs.8000\n
+Then, total salary of all workers = 8000x
+\n
+Given that average salary of 7 technicians is Rs.12000\n
+=> Total salary of 7 technicians = 7 × 12000 = 84000
+\n
+Count of the rest of the employees = (x - 7)\n
+Average salary of the rest of the employees = Rs.6000\n
+Total salary of the rest of the employees = (x - 7)(6000)
+\n
+8000x = 84000 + (x - 7)(6000)\n
+=> 8x = 84 + (x - 7)(6)\n
+=> 8x = 84 + 6x - 42\n
+=> 2x = 42\n
+=> x = 42/2\n
+= 21 \n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div6"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv66" />
+
+
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div6"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 7.\n
+The average age of students of a class is 15.8 years.
+ The average age of boys in the class is 16.4 years and that of the girls is 15.4 years.
+ The ratio of the number of boys to the number of girls in the class is:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv77"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv7"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+Let the ratio be k:1\n
+Then, k x 16.4 + 1 x 15.4 = (k + 1) x 15.8\n
+(16.4 – 15.8) k = (15.8 – 15.4)\n
+k=2/3	 \n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div7"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv77" />
+
+
+            <TextView
+                android:id="@+id/tv8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div7"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 8.\n
+The average of a non-zero number and its square is 5 times the number. The number is:
+?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv88"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv8"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+Let the number be x.
+Then,
+(x + x^2) / 2 = 5x\n
+x^2 – 9x = 0\n
+x (x – 9) = 0\n
+x = 0 or x = 9.\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div8"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv88" />
+
+            <TextView
+                android:id="@+id/tv9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div8"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 9.\n
+The average age of the boys in a class is 16 years and that of the girls is 15 years.
+The average age for the whole class is:"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv99"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv9"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+Clearly, to find the average, we ought to know the number of boys,\n
+ girls or students in the class, neither of which has been given\n
+So, the data provided is inadequate \n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div9"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv99" />
+
+
+            <TextView
+                android:id="@+id/tv10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div9"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 10.\n
+A cricketer has completed 10 innings and his average is 21.5 runs.
+How many runs must he make in his next innings so as to raise his average to 24?"               android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv10"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+Total of 10 innings = 21.5 x 10 = 215\n
+Suppose he needs a score of a in 11th innings; then average in 11 innings =
+(215 + a) / 11= 24\n
+or, a = 264-215 = 49
+
+ \n\n\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div10"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv100" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

@@ -1,0 +1,450 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="admin.example.com.SubTopics.Prob.BALLS">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:visibility="visible">
+
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="500dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="30dp"
+            android:minHeight="50dp">
+
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_toEndOf="@id/ivContactItem2"
+                android:layout_toRightOf="@id/ivContactItem2"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Formula: \n\n
+
+1. If the current age is x, then n times the age is nx.\n
+2. If the current age is x, then age n years later/hence = x + n.\n
+3. If the current age is x, then age n years ago = x - n.\n
+4. The ages in a ratio a : b will be ax and bx.\n
+5. If the current age is x, then 1/n of the age is	x\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv1"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_toEndOf="@id/ivContactItem2"
+                android:layout_toRightOf="@id/ivContactItem2"
+                android:lineSpacingMultiplier="1.4"
+                android:text=" "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121" />
+
+            <include
+                android:id="@+id/div1"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv11" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div1"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 2:\n
+1. Venkat’s age after 10 years will be 6 times his age 5 years back. What is the present age of Venkat?
+\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv2"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+Let take Venkat present age as ‘x’.\n
+Venkat age after 10 years that is (x+10) , Venkat age 5 years back that is (x-5).
+Now as per question :     \n x+10 = 6(x-5)
+                            \n  5x= 15
+                              \n X=3
+So, the present age of Venakt is 3 years.\n\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div2"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv22" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div2"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 3:\n
+The ratio of Geetha and nanditha is 3:5 after 8 years , their ages in the ratio of 1:2. Find the difference in their present ages?\n\n
+tricks and tips to solve problems on ages :"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv3"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+Let take Geetha present age as 2x and nanditha present age as 5x.\n
+                After 8 years geetha age is 2x+8 and nanditha age is 5x+8. \n
+                As per question after 8 years their ratio is 1:2\n
+                So (2x+8)/( 5x+8) = 1/2\n
+                4x+16=5x+8\n
+                X= 8\n
+So, Now the Geetha present age is 2*8 = 16 and Nanditha age is 5*8 = 40\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div3"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv33" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div3"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 4.\n
+Dhoni is younger than Sehwag by 6 years. If the ratio of their ages is 7:10, find the age of Dhoni?\n\n
+tricks and tips to solve problems on ages :"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv4"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+Let take Sehwag age is x, Then Dhoni age is x-6\n
+                Now as per question (x-6)/x = 7/10\n
+                                10x-60=7x\n
+                                3x = 60\n
+                                X=20\n
+ Now the Sehwag age is 20 and the Dhoni age is 20-6 = 14\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div4"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv44" />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div4"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 5.\n
+The sum of ages of 5 children born at the intervals of 3 years each is 50 years. Find out the age of the youngest child?\n\n
+tricks and tips to solve problems on ages :\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv5"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+For simplicity we can start the solution with youngest child age,\n
+                 Let take age of youngest child is x\n
+                 Now the ages of remaining children is (x+3), (x+6), (x+9), (x+12) because as per question 3 years interval.\n
+As per question x+(x+3)+(x+6)+(x+9)+ (x+12) = 50\n
+By solving this equation we can get x value as 4. So the youngest age of child is 4 \n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div5"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv55" />
+
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div5"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 6.\nA father said his son , \n
+     I was as old as you are at present at the time of your birth. \n
+     If the father age is 38 now, the son age 5 years back was ..\n
+tricks and tips to solve problems on ages :
+\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv6"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+The logic in the “I was as old as you are at present at the time of your birth” is present father age is twice the son age.\n\n
+Now in the question father age is given as 38. So now the son age is 38/2 = 19.
+So son present age is 19. \n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div6"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv66" />
+
+
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div6"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 7.\n
+The father’s age four years ago was 8 times the age of his son. At present the father’s age is 4 times that of his son. Find the son’s present age.\n"                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv77"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv7"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+Son’s present age = x\n
+
+We’ll first make the present age’s equation with dad and son – only ‘cause it makes things easier to proceed from the present!\n
+
+‘At present the father’s age is 4 times that of his son’, i.e., Father’s present age = 4x.\n
+
+‘Father’s age four years ago was 8 times the age of his son’ – ‘four years ago’ will simple mean, subtracting 4 from the present ages of BOTH father and son; and the whole equation will stand as :\n
+
+(4x – 4) = 8 x (x – 4)\n
+Solving it – x = 7 years,\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div7"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv77" />
+
+
+            <TextView
+                android:id="@+id/tv8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div7"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 8.\n
+The ratio of the father’s age to the son’s age is 4:1 the product of their ages is 196. What will the ratio of their ages after 5 years?\n"               android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv88"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv8"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text=" 11:4 \n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div8"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv88" />
+
+            <TextView
+                android:id="@+id/tv9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div8"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 9.\n
+At present, the ratio between the ages of Amar and Norman is 4:3. After 6 years, Amar’s age will be 26 years. What is the age of Norman at present?
+"
+                android:textColor="#212121"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <TextView
+                android:id="@+id/tv99"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv9"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+they have also have given the ration of present ages, 4:3.\n
+
+So we can use ‘x’ to denote both their present ages to be 4x and 3x, i.e., Amar’s and Norman’s respectively.\n
+
+Next, ‘Amar’s age 6 years later’, = (4x + 6) = 26.\n
+x = 5 years.\n
+
+Norman’s present age = 3x = 3 x 5 = 15 years.\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div9"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv99" />
+
+
+            <TextView
+                android:id="@+id/tv10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div9"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 10.\n
+The age of Rekha is twelve times that of her daughter Avani. If the age of Avani is 3 years, what is the age of Rekha?\n"                android:textColor="#212121"
+                android:textStyle="bold"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+            <TextView
+                android:id="@+id/tv100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv10"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+Rekha’s present age = x \n
+
+Rekha’a age is 12 times her daughter’s age.\n
+
+Daughter’s age = 3. Therefore, 12 times of 3 = x\n
+
+12 x 3 = x \n
+= 36 years = Rekha’s age.
+\n\n \n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div10"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv100" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>

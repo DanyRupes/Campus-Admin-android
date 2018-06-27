@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="10dp" >
+
+    <TextView
+       android:id="@+id/textView2"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:text="@string/log_in_to_aharwaala"
+       android:textAlignment="center"
+       android:textColor="@color/common_google_signin_btn_text_dark_focused"
+       android:textSize="30sp"
+       android:fontFamily="monospace"
+
+       />
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        app:srcCompat="@drawable/sreclogo"
+        android:alpha="0.1"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/login_input_layout_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:id="@+id/login_input_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+           android:textColor="@color/holo_orange_dark"/>
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/login_input_layout_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp">
+        <EditText
+            android:id="@+id/login_input_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="@string/enter_your_password"
+           android:textColor="@color/holo_orange_dark"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+       android:id="@+id/btn_login"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:layout_marginTop="40dp"
+       android:background="@color/holo_orange_dark"
+       android:text="@string/log_in"
+       android:textSize="25sp"
+       android:textColor="@android:color/white"
+       android:fontFamily="monospace"
+       />
+
+
+    <Button android:id="@+id/btn_link_signup"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/don_t_hanve_an_account_click_here"
+        android:background="@android:color/transparent"
+       android:textSize="15sp"
+       android:fontFamily="sans-serif-smallcaps"
+       android:textColor="@color/holo_orange_dark"/>
+    <Button
+        android:id="@+id/frgtpswd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="Forgot Password ?"
+        android:textColor="@color/holo_orange_dark"
+        android:textSize="12sp"
+
+        />
+
+    <ProgressBar
+       android:id="@+id/progressBar"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content" />
+
+</LinearLayout>

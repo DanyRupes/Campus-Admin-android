@@ -1,0 +1,350 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:app="http://schemas.android.com/apk/res-auto"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   android:layout_alignEnd="@+id/textView7"
+   android:layout_alignParentTop="true"
+   android:layout_alignRight="@+id/textView7"
+   android:layout_marginEnd="2dp"
+   android:layout_marginRight="4dp"
+   android:layout_marginTop="2dp"
+   android:orientation="vertical"
+   android:id="@+id/linearLayout">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:id="@+id/rellayscroll">
+
+        <HorizontalScrollView
+            android:id="@+id/hsv"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:fillViewport="true"
+            android:measureAllChildren="false"
+            android:scrollbars="none" >
+            <LinearLayout
+                android:id="@+id/innerLay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal" >
+
+
+                <LinearLayout
+                    android:id="@+id/Ratio1"
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical" >
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/circleImageView1"
+                            android:layout_width="50sp"
+                            android:layout_height="80sp"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:src="@drawable/album1"
+                            app:civ_border_color="#ff8040"
+                            app:civ_border_width="2dp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:textAlignment="center"
+                            android:padding="2dp"
+                            android:layout_below="@+id/circleImageView1"
+                            android:text="Simples Interest"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/Ratio2"
+                    android:layout_width="130sp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:orientation="vertical" >
+                    <RelativeLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent" >
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="50sp"
+                            android:layout_height="80sp"
+                            android:src="@drawable/album3"
+                            app:civ_border_width="2dp"
+                            app:civ_border_color="#ff8040"
+                            android:id="@+id/circleImageView3"
+                            android:layout_centerHorizontal="true"/>
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:padding="2dp"
+                            android:textAlignment="center"
+                            android:layout_below="@+id/circleImageView3"
+                            android:text="Compound Interest"/>
+                    </RelativeLayout>
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+    <ScrollView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:focusable="false"
+       android:visibility="visible">
+
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="500dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="30dp"
+            android:minHeight="50dp">
+
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_toEndOf="@id/ivContactItem2"
+                android:layout_toRightOf="@id/ivContactItem2"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Formula: \n\n
+
+1)  \tSI = P x R x N/100\n
+2)  \tPrincipal = Simple Interest ×100/ R × N\n
+3)  \tRate of Interest = Simple Interest ×100 / P × N\n
+4)  \tN = Simple Interest ×100 / P × R\n
+5)  \tIf rate of Simple interest differs from year to year, then\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121" />
+
+            <include
+                android:id="@+id/div1"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv1" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div1"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Simple Interest = Principal × (R1+R2+ R3…..)/100\n\n
+
+The four variables in the above formula are:\n
+                \t SI=Simple Interest\n
+                \t P=Principal Amount\n
+                \t N=Number of years\n
+                \t R=Rate of interestin percentage\n\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121" />
+
+            <include
+                android:id="@+id/div2"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv2" />
+
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignTop="@+id/tv2"
+                android:layout_marginTop="242dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="
+Note:\n\n
+
+1). A sum of money is divided into n parts in such a way that the interest on the first part at r1% for t1 years, on second part at r2% for t2 years, on third part at r3% for t3years and so on, are equal. Then the ratio in which the sum is divided in n part is:
+1/r1×t1: 1/r2 ×t2: 1/r3×t3\n\n
+
+Example:\n\n
+
+A sum of Rs 7700 is lent out in two parts in such a way that the interest on one part at 20% for 5 yr is equal to that on another part at 9% for 6 yr. Find the two sums.\n\n
+
+Solution:\n\n
+
+Here, R1 = 20% R2 = 9%\n
+T1 = 5 yr T2 = 6 yr\n
+By using formula, ratio of two sums  = 1/100 : 1/54 = 27 : 50\n
+Therefore,\n
+first part = [27/(27+50)]*7700 = Rs 2700\n
+Second part = [50/(27+50)]*7700 = Rs 5000\n\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121" />
+
+            <include
+                android:id="@+id/div3"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv3" />
+
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div3"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="
+Note:\n\n
+
+2). Amount = Principal + S.I = p + [(p x r x t)/100]\n\n
+
+Example:\n\n
+
+What Principal will amount to Rs. 16000 in 6 years at 10% simple interest?\n\n
+
+Solution:\n\n
+
+Let the principal be Rs. p, given rate of interest is 10% and time = 6 years.\n
+Amount received at the end of 6 years = 16000 Rs.\n
+=> 16000 = p + (p x 10 x 6)/100 = p + 6p/10 = 16p/10 => P = 16000 x (10/16) = 1000 x 10 = 10000 Rs.\n
+Principal should be Rs. 10000\n\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121" />
+
+            <include
+                android:id="@+id/div4"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv4" />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div4"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="
+Note:\n\n
+
+3). If sum becomes n times in T yr at simple interest, then formula for calculating rate of interest\n
+R =100(n-1) /T %\n\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121" />
+
+            <include
+                android:id="@+id/div5"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv5" />
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div5"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="
+Note:\n\n
+
+4). A sum of money becomes 4 times in 20 yr at SI. Find the rate of interest?\n
+R =100(4-1)/20\n
+=100*3 / 20 =5*3 =15\n\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121" />
+
+            <include
+                android:id="@+id/div6"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv6" />
+
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div6"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="
+Note:\n\n
+
+5). If A sum becomes n times in at certain rate of interest .then the time taken in                    which the same amount will be n times at the same rate of interest:\n
+= (n-1)/2 × T (n = number of times)\n\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121" />
+
+            <include
+                android:id="@+id/div7"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv7" />
+
+            <TextView
+                android:id="@+id/tv8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div7"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="
+Note:\n\n
+
+6). If A sum becomes 3 times in at certain rate of interest in 5years .find the time taken in  the same amount will be 8 times at the same rate of interest:\n
+=(8-1)/2*5\n
+= 7/2 * 5\n
+=17.5years\n\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121" />
+
+            <include
+                android:id="@+id/div8"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv8" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+</LinearLayout>
+

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="admin.example.com.nav">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/appicon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity android:name="admin.example.com.campus.MenuTutorial" />
+        <activity
+            android:name="admin.example.com.campus.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="admin.example.com.campus.LoginActivity" />
+        <activity android:name="admin.example.com.campus.SignupActivity" />
+        <activity android:name="admin.example.com.campus.UserActivity" />
+        <activity
+            android:name="admin.example.com.SlidingActivity.SamplePrograms"
+            android:label="@string/title_activity_main2"
+            android:parentActivityName="admin.example.com.campus.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="admin.example.com.nav.admin.example.com.campus.MainActivity" />
+        </activity>
+        <activity
+            android:name="admin.example.com.campus.DetailsActivity"
+            android:label="@string/title_activity_details"
+            android:parentActivityName="admin.example.com.campus.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="admin.example.com.nav.admin.example.com.campus.MainActivity" />
+        </activity>
+        <activity android:name="admin.example.com.pyt.BasicSyntax" />
+        <activity android:name="admin.example.com.pyt.VarTypes" />
+        <activity android:name="admin.example.com.pyt.BasicOp" />
+        <activity android:name="admin.example.com.pyt.DecMak" />
+        <activity android:name="admin.example.com.pyt.Loops" />
+        <activity android:name="admin.example.com.pyt.Numbers" />
+        <activity android:name="admin.example.com.pyt.Stringss" />
+        <activity android:name="admin.example.com.pyt.Lists" />
+        <activity android:name="admin.example.com.pyt.Tuples" />
+        <activity android:name="admin.example.com.pyt.Dictionary" />
+        <activity android:name="admin.example.com.pyt.Func" />
+        <activity android:name="admin.example.com.pyt.ExcpHand" />
+        <activity android:name="admin.example.com.pyt.ClsAndObj" />
+        <activity android:name="admin.example.com.c.C_bas_syn" />
+        <activity android:name="admin.example.com.c.C_data_types" />
+        <activity android:name="admin.example.com.c.C_op" />
+        <activity android:name="admin.example.com.c.C_dec_mak" />
+        <activity android:name="admin.example.com.c.C_loops" />
+        <activity android:name="admin.example.com.c.C_func" />
+        <activity android:name="admin.example.com.c.C_array" />
+        <activity android:name="admin.example.com.c.C_pointers" />
+        <activity android:name="admin.example.com.c.C_strings" />
+        <activity android:name="admin.example.com.c.C_error_hand" />
+        <activity android:name="admin.example.com.c.C_struct_union" />
+        <activity android:name="admin.example.com.java.J_bas_syn" />
+        <activity android:name="admin.example.com.java.J_var" />
+        <activity android:name="admin.example.com.java.J_op" />
+        <activity android:name="admin.example.com.java.J_loops" />
+        <activity android:name="admin.example.com.java.J_dec_mak" />
+        <activity android:name="admin.example.com.java.J_numbers" />
+        <activity android:name="admin.example.com.java.J_string" />
+        <activity android:name="admin.example.com.java.J_array" />
+        <activity android:name="admin.example.com.java.J_methods" />
+        <activity android:name="admin.example.com.java.J_exp" />
+        <activity android:name="admin.example.com.java.J_cao" />
+        <activity android:name="admin.example.com.campus.PicUpload" />
+        <activity android:name="admin.example.com.campus.FileUpload" />
+        <activity
+            android:name="admin.example.com.campus.ViewUploadsActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name="admin.example.com.campus.PlacementActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="admin.example.com.campus.EditProfile" />
+        <activity android:name="admin.example.com.campus.SampleContent" />
+        <activity android:name="admin.example.com.campus.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+
+
+        </activity>
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity android:name="admin.example.com.campus.ResetPasswordActivity" />
+        <activity android:name="admin.example.com.campus.Post"/>
+        <activity android:name="admin.example.com.campus.ShowStudentDetailsActivity"/>
+
+        <service
+            android:name=".MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

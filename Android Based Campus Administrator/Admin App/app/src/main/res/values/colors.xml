@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red">#590204</color>
+    <color name="green">#1c9e02</color>
+    <color name="orange">#e2791c</color>
+    <color name="yellow">#ffe72d</color>
+    <color name="black">#000000</color>
+    <color name="holo_orange_dark">#ff8800</color>
+
+    <color name="colorPrimary">#ffa200</color>
+    <color name="colorPrimaryDark">#f9ffa200</color>
+    <color name="colorAccent">#f1ffa200</color>
+    <color name="white">#ffffff</color>
+    <color name="feed_bg">#d3d6db</color>
+    <color name="feed_item_bg">#ffffff</color>
+    <color name="feed_item_border">#c2c3c8</color>
+    <color name="link">#0a80d1</color>
+    <color name="timestamp">#a0a3a7</color>
+
+
+    <color name="viewBg">#f1f5f8</color>
+    <color name="album_title">#4c4c4c</color>
+</resources>

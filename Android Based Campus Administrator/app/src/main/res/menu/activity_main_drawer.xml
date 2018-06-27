@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_menu"
+            android:icon="@drawable/ic_home"
+            android:title="Home " />
+
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title=" Logical Reasoning">
+            <menu>
+                <group android:checkableBehavior="single">
+
+                    <item
+                        android:id="@+id/nav_menu1"
+                        android:icon="@drawable/ic_num"
+                        android:title="@string/numsys" />
+                    <item
+                        android:id="@+id/nav_menu2"
+                        android:icon="@drawable/ic_percent"
+                        android:title="@string/percent" />
+                    <item
+                        android:id="@+id/nav_menu3"
+                        android:icon="@drawable/ic_percent"
+                        android:title="@string/ratios" />
+                    <item
+                        android:id="@+id/nav_menu4"
+                        android:icon="@drawable/ic_avg"
+                        android:title="@string/avg" />
+                    <item
+                        android:id="@+id/nav_menu5"
+                        android:icon="@drawable/ic_mix"
+                        android:title="@string/mixtures_amp_aligators" />
+                    <item
+                        android:id="@+id/nav_menu6"
+                        android:icon="@drawable/ic_timwrk"
+                        android:title="@string/timwrk" />
+                    <item
+                        android:id="@+id/nav_menu7"
+                        android:icon="@drawable/ic_tsd"
+                        android:title="@string/timspdis" />
+                    <item
+                        android:id="@+id/nav_menu8"
+                        android:icon="@drawable/ic_sici"
+                        android:title="@string/sici" />
+
+                    <item
+                        android:id="@+id/nav_menu9"
+                        android:icon="@drawable/ic_tsd"
+                        android:title="@string/permutations_amp_combinations" />
+                    <item
+                        android:id="@+id/nav_menu10"
+                        android:icon="@drawable/ic_tsd"
+                        android:title="@string/probability" />
+
+                </group>
+            </menu>
+        </item>
+    </group>
+
+
+
+
+
+    <group android:checkableBehavior="single">
+        <item android:title="Programming">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_menu11"
+                        android:icon="@drawable/ic_tutorial"
+                        android:title="@string/tutorial" />
+                    <item
+                        android:id="@+id/nav_menu12"
+                        android:icon="@drawable/ic_sp"
+                        android:title="@string/samprg" />
+
+                </group>
+            </menu>
+        </item>
+        </group>
+
+
+
+    <group android:checkableBehavior="single">
+        <item android:title="@string/pahead">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item
+                        android:id="@+id/nav_menu13"
+                        android:icon="@drawable/ic_menu_camera"
+                        android:title="@string/pa" />
+
+                </group>
+            </menu>
+        </item>
+    </group>
+
+
+</menu>

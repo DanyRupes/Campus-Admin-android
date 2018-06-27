@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:layout_marginTop="@dimen/activity_horizontal_margin"
+	android:padding="@dimen/activity_horizontal_margin"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior"
+	tools:context="com.letsnurture.ln_202.coordinatorlayoutpart1.ScrollingActivity"
+	tools:showIn="@layout/activity_scrolling">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+
+		<include layout="@layout/item_divider" />
+
+		<RelativeLayout
+			android:id="@+id/relay1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:background="?attr/selectableItemBackground"
+			android:clickable="true"
+			android:longClickable="true"
+			android:padding="@dimen/activity_horizontal_margin">
+
+			<ImageView
+				android:id="@+id/ivContactItem1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginEnd="@dimen/activity_horizontal_margin"
+				android:layout_marginRight="@dimen/activity_horizontal_margin"
+				android:src="@drawable/ic_person" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/activity_horizontal_margin"
+				android:layout_marginStart="@dimen/activity_horizontal_margin"
+				android:layout_marginTop="8dp"
+				android:layout_toEndOf="@id/ivContactItem1"
+				android:layout_toRightOf="@id/ivContactItem1"
+				android:text="Name"
+				android:textAppearance="@style/TextAppearance.AppCompat.Small"
+				android:textColor="#727272"
+				android:id="@+id/textView" />
+
+			<TextView
+				android:id="@+id/textView3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBaseline="@+id/textView"
+				android:layout_alignBottom="@+id/textView"
+				android:layout_marginLeft="65dp"
+				android:layout_marginStart="65dp"
+				android:layout_toEndOf="@+id/textView"
+				android:layout_toRightOf="@+id/textView"
+				android:text="TextView"
+				android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+		</RelativeLayout>
+
+		<include layout="@layout/item_divider" />
+
+		<RelativeLayout
+			android:id="@+id/relay2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="?attr/selectableItemBackground"
+			android:clickable="true"
+			android:longClickable="true"
+			android:padding="@dimen/activity_horizontal_margin">
+
+			<ImageView
+				android:id="@+id/ivContactItem2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginEnd="@dimen/activity_horizontal_margin"
+				android:layout_marginRight="@dimen/activity_horizontal_margin"
+				android:src="@drawable/ic_mail"
+				android:visibility="visible" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/activity_horizontal_margin"
+				android:layout_marginStart="@dimen/activity_horizontal_margin"
+				android:layout_marginTop="8dp"
+				android:layout_toEndOf="@id/ivContactItem2"
+				android:layout_toRightOf="@id/ivContactItem2"
+				android:text="Email Id"
+				android:textAppearance="@style/TextAppearance.AppCompat.Small"
+				android:textColor="#727272"
+				android:id="@+id/textView4" />
+
+			<TextView
+				android:id="@+id/textView6"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBottom="@+id/textView4"
+				android:layout_marginLeft="54dp"
+				android:layout_marginStart="54dp"
+				android:layout_toEndOf="@+id/textView4"
+				android:layout_toRightOf="@+id/textView4"
+				android:text="TextView"
+				android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+		</RelativeLayout>
+
+		<include layout="@layout/item_divider" />
+
+		<RelativeLayout
+			android:id="@+id/relay3"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:background="?attr/selectableItemBackground"
+			android:clickable="true"
+			android:longClickable="true"
+			android:padding="@dimen/activity_horizontal_margin">
+
+			<ImageView
+				android:id="@+id/ivContactItem3"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginEnd="@dimen/activity_horizontal_margin"
+				android:layout_marginRight="@dimen/activity_horizontal_margin"
+				android:src="@drawable/ic_dept" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/activity_horizontal_margin"
+				android:layout_marginStart="@dimen/activity_horizontal_margin"
+				android:layout_marginTop="8dp"
+				android:layout_toEndOf="@id/ivContactItem3"
+				android:layout_toRightOf="@id/ivContactItem3"
+				android:text="Department"
+				android:textAppearance="@style/TextAppearance.AppCompat.Small"
+				android:textColor="#727272"
+				android:id="@+id/textView8" />
+
+			<TextView
+				android:id="@+id/textView9"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBaseline="@+id/textView8"
+				android:layout_alignBottom="@+id/textView8"
+				android:layout_marginLeft="32dp"
+				android:layout_marginStart="32dp"
+				android:layout_toEndOf="@+id/textView8"
+				android:layout_toRightOf="@+id/textView8"
+				android:text="TextView"
+				android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+		</RelativeLayout>
+
+		<include layout="@layout/item_divider" />
+
+		<RelativeLayout
+			android:id="@+id/relay5"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:background="?attr/selectableItemBackground"
+			android:clickable="true"
+			android:longClickable="true"
+			android:padding="@dimen/activity_horizontal_margin">
+
+			<ImageView
+				android:id="@+id/ivContactItem5"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginEnd="@dimen/activity_horizontal_margin"
+				android:layout_marginRight="@dimen/activity_horizontal_margin"
+				android:src="@drawable/ic_year" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/activity_horizontal_margin"
+				android:layout_marginStart="@dimen/activity_horizontal_margin"
+				android:layout_marginTop="8dp"
+				android:layout_toEndOf="@id/ivContactItem5"
+				android:layout_toRightOf="@id/ivContactItem5"
+				android:text="Year"
+				android:textAppearance="@style/TextAppearance.AppCompat.Small"
+				android:textColor="#727272"
+				android:id="@+id/textView10" />
+
+			<TextView
+				android:id="@+id/textView14"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignBaseline="@+id/textView10"
+				android:layout_alignBottom="@+id/textView10"
+				android:layout_marginLeft="65dp"
+				android:layout_marginStart="65dp"
+				android:layout_toEndOf="@+id/textView10"
+				android:layout_toRightOf="@+id/textView10"
+				android:text="TextView"
+				android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+		</RelativeLayout>
+
+		<include layout="@layout/item_divider" />
+
+		<RelativeLayout
+			android:id="@+id/relay6"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:background="?attr/selectableItemBackground"
+			android:clickable="true"
+			android:longClickable="true"
+			android:padding="@dimen/activity_horizontal_margin">
+
+			<ImageView
+				android:id="@+id/ivContactItem6"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginEnd="@dimen/activity_horizontal_margin"
+				android:layout_marginRight="@dimen/activity_horizontal_margin"
+				android:src="@drawable/ic_cgpa" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/activity_horizontal_margin"
+				android:layout_marginStart="@dimen/activity_horizontal_margin"
+				android:layout_marginTop="8dp"
+				android:layout_toEndOf="@id/ivContactItem6"
+				android:layout_toRightOf="@id/ivContactItem6"
+				android:text="CGPA"
+				android:textAppearance="@style/TextAppearance.AppCompat.Small"
+				android:textColor="#727272"
+				android:id="@+id/textView12" />
+
+			<TextView
+				android:id="@+id/textView17"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginLeft="70dp"
+				android:layout_marginStart="70dp"
+				android:layout_toEndOf="@+id/textView12"
+				android:layout_toRightOf="@+id/textView12"
+				android:text="TextView"
+				android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+		</RelativeLayout>
+
+		<include layout="@layout/item_divider" />
+
+		<RelativeLayout
+			android:id="@+id/relay4"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:background="?attr/selectableItemBackground"
+			android:clickable="true"
+			android:longClickable="true"
+			android:padding="@dimen/activity_horizontal_margin">
+
+			<ImageView
+				android:id="@+id/ivContactItem4"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_centerVertical="true"
+				android:layout_marginEnd="@dimen/activity_horizontal_margin"
+				android:layout_marginRight="@dimen/activity_horizontal_margin"
+				android:src="@drawable/ic_con" />
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginLeft="@dimen/activity_horizontal_margin"
+				android:layout_marginStart="@dimen/activity_horizontal_margin"
+				android:layout_marginTop="8dp"
+				android:layout_toEndOf="@id/ivContactItem4"
+				android:layout_toRightOf="@id/ivContactItem4"
+				android:text="Contact"
+				android:textAppearance="@style/TextAppearance.AppCompat.Small"
+				android:textColor="#727272"
+				android:id="@+id/textView18" />
+
+			<TextView
+				android:id="@+id/textView19"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_alignTop="@+id/textView18"
+				android:layout_marginLeft="60dp"
+				android:layout_marginStart="60dp"
+				android:layout_toEndOf="@+id/textView18"
+				android:layout_toRightOf="@+id/textView18"
+				android:text="TextView"
+				android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+		</RelativeLayout>
+
+		<include layout="@layout/item_divider" />
+
+		<RelativeLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:background="?attr/selectableItemBackground"
+			android:clickable="true"
+			android:longClickable="true"
+			android:padding="@dimen/activity_horizontal_margin">
+
+		<Button
+				android:id="@+id/btnres"
+				android:background="@drawable/my_button_bg"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Upload Image"
+				android:layout_alignParentLeft="true"
+				style="@style/Widget.AppCompat.Button.Borderless.Colored" />
+
+			<Button
+				android:id="@+id/btnpdf"
+				android:background="@drawable/my_button_bg"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Upload FILE"
+				android:layout_centerInParent="true"
+				style="@style/Widget.AppCompat.Button.Borderless.Colored" />
+
+			<Button
+				android:id="@+id/edprof"
+				android:background="@drawable/my_button_bg"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Edit Profile"
+				android:layout_alignParentRight="true"
+				style="@style/Widget.AppCompat.Button.Borderless.Colored" />
+
+		</RelativeLayout>
+
+		<include layout="@layout/item_divider" />
+
+	</LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

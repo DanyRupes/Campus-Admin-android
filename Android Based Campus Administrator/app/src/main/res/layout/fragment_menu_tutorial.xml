@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minHeight="25dp"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <Button
+       android:id="@+id/button"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignParentTop="true"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="52dp"
+       android:background="#ffff8800"
+       android:fontFamily="monospace"
+       android:minWidth="250dp"
+       android:text="Sample Programs"
+       android:textColor="@color/red"
+       android:textSize="23sp" />
+
+    <Button
+       android:id="@+id/buttonP"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignEnd="@+id/button"
+       android:layout_alignLeft="@+id/button"
+       android:layout_alignRight="@+id/button"
+       android:layout_alignStart="@+id/button"
+       android:layout_below="@+id/button"
+       android:layout_marginTop="56dp"
+       android:background="#ffff8800"
+       android:fontFamily="monospace"
+       android:minWidth="250dp"
+       android:text="Learn Python"
+       android:textColor="@color/red"
+       android:textSize="23sp" />
+
+    <Button
+       android:id="@+id/buttonC"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignEnd="@+id/buttonP"
+       android:layout_alignLeft="@+id/buttonP"
+       android:layout_alignRight="@+id/buttonP"
+       android:layout_alignStart="@+id/buttonP"
+       android:layout_below="@+id/buttonP"
+       android:layout_marginTop="65dp"
+       android:background="#ffff8800"
+       android:fontFamily="monospace"
+       android:minWidth="250dp"
+       android:text="Learn C"
+       android:textColor="@color/red"
+       android:textSize="23sp" />
+
+    <Button
+       android:id="@+id/buttonCP"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignEnd="@+id/buttonC"
+       android:layout_alignLeft="@+id/buttonC"
+       android:layout_alignRight="@+id/buttonC"
+       android:layout_alignStart="@+id/buttonC"
+       android:layout_below="@+id/buttonC"
+       android:layout_marginTop="65dp"
+       android:background="#ffff8800"
+       android:fontFamily="monospace"
+       android:minWidth="250dp"
+       android:text="Learn Java"
+       android:textColor="@color/red"
+       android:textSize="23sp" />
+
+</RelativeLayout>

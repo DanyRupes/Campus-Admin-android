@@ -1,0 +1,505 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="admin.example.com.SubTopics.Prob.BALLS">
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="false"
+        android:visibility="visible">
+
+
+        <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="500dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginTop="30dp"
+            android:minHeight="50dp">
+
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_toEndOf="@id/ivContactItem2"
+                android:layout_toRightOf="@id/ivContactItem2"
+                android:lineSpacingMultiplier="1.4"
+                android:text="\nImportant formulas and shortcuts for mixtures and alligations
+\n1) Rule Of Alligation"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv1"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_toEndOf="@id/ivContactItem2"
+                android:layout_toRightOf="@id/ivContactItem2"
+                android:lineSpacingMultiplier="1.4"
+                android:text="
+Given , Quantity of cheaper ingredient = qc,\n
+Cost price of cheaper ingredient = pc,\n
+Quantity of dearer or costlier ingredient = qd,\n
+Cost price of costlier or dearer ingredient = pd. \n
+Consider, mean price of mixture as pm and quantity of mixture as qm.\n
+We know, qm = qc + qd\n
+Then we get,
+    \t(qc * pc + qd * pd) = qm * pm = (qc + qd) * pm\n
+\t→ qc ( pm – pc) = qd (pd – pc)\n
+\t→ qc / qd =  (pd – pc) / ( pm – pc)\n
+ \n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121" />
+
+            <include
+                android:id="@+id/div1"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv11" />
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div1"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="2) Quantity of ingredient to be added to increase the content of ingredient in the mixture to y%
+"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv2"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="If P liters of a mixture contains x% ingredient in it. Find the quantity of ingredient to be added to increase the content of ingredient in the mixture to y%.\n
+Let the quantity of ingredient to be added = Q liters \n
+Quantity of ingredient in the given mixture = x% of P = x/100 * P \n
+Percentage of ingredient in the final mixture = Quantity of ingredient in final mixture / Total quantity of final mixture. \n
+Quantity of ingredient in final mixture = [x/100 * P] + Q = [ P*x + 100 * Q] / 100\n
+Total quantity of final mixture = P + Q \n
+→ y/100 = [[ P*x + 100 * Q] / 100]/[P + Q] \n
+→ y[P + Q] = [P*x + 100 * Q]n\n
+\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div2"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv22" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div2"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="
+3) If n different vessels of equal size are filled with the mixture of P and Q
+
+"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv3"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="
+If n different vessels of equal size are filled with the mixture of P and Q in the ratio p1 : q1, p2 : q2, ……, pn : qn and content of all these vessels are mixed in one large vessel, then\n
+Let x liters be the volume of each vessel,\n
+Quantity of P in vessel 1 = p1 * x / (p1 + q1) \n
+Quantity of P in vessel 2 = p2 * x / (p2 + q2) \n
+Quantity of P in vessel n = pn * x / (pn + qn)... and so on\n
+Similarly,\n
+Quantity of Q in vessel 1 = q1 * x / (p1 + q1)\n
+Quantity of Q in vessel 2 = q2 * x / (p2 + q2)\n
+Quantity of Q in vessel n = qn * x / (pn + qn)... and so on\n
+Therefore, when content of all these vessels are mixed in one large vessel, then\n
+
+Quantity of P  Quantity of Q = Sum of quantities of P in different vessels / Sum of quantities of Q in different vessels\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div3"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv33" />
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div3"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="4) If n different vessels of sizes x1, x2, …, xn are filled with the mixture of P and Q
+
+"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv4"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="
+If n different vessels of sizes x1, x2, …, xn are filled with the mixture of P and Q in the ratio p1 : q1, p2 : q2, ……, pn : qn and content of all these vessels are mixed in one large vessel, then\n
+Quantity of P in vessel 1 = p1 * x1/(p1 + q1) \n
+Quantity of P in vessel 2 = p2 * x2/(p2 + q2) \n
+Quantity of P in vessel n = pn * xn/(pn + qn)... and so on \n
+Similarly,\n\n
+Quantity of Q in vessel 1 = q1 * x1/(p1 + q1) \n
+Quantity of Q in vessel 2 = q2 * x2/(p2 + q2) \n
+Quantity of Q in vessel n = qn * xn/(pn + qn) \n
+Therefore, when content of all these vessels are mixed in one large vessel\n
+
+Quantity of P / Quantity of Q = Sum of quantities of P in different vessels / Sum of quantities of Q in different vessels\n
+
+ \n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div4"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv44" />
+
+            <TextView
+                android:id="@+id/tv5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div4"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="5) Quantity of ingredient to be added to change the ratio of ingredients in a mixture
+
+ "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv5"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="
+In a mixture of x liters, the ratio of milk and water is a : b. If the this ratio is to be c : d, then the quantity of water to be further added is:\n
+In original mixture \n
+Quantity of milk = x * a/(a + b) liters\n
+Quantity of water = x * b/(a + b) liters\n
+Let quantity of water to be added further be w litres.\n
+Therefor in new mixture:\n
+Quantity of milk = x * a/(a + b) liters → Equation(1)\n
+Quantity of water = [x * b/(a + b) ] + w liters → Equation (2)\n
+→ c / d = Equation (1) / Equation (2)
+\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div5"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv55" />
+
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div5"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 6)\n A mixture of 25 litre has some quantity of milk and water and the rate of milk sold at 15RS per liter while pure milk is sold at the rate of 25RS. Find the quantity of water in the mixture.
+
+"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv6"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+Price of pure milk 15RS\n
+Price of Mixture 25RS\n
+Price of water 0\n
+Milk  \t Water\n
+25   \t   \t     0\n
+15    \t   \t  10\n
+Ratio of 15:10\n
+3:2\n
+Quantity of water in the mixture = 25/5×3 = 15 litre. \n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div6"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv66" />
+
+
+            <TextView
+                android:id="@+id/tv7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div6"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 7.\nIn a Vessel, the ratio of milk to water is 4:7. Then find how much percentage of water is in the vessel.
+?
+ "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv77"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv7"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+Milk: Water\n
+4:7\n
+
+In the vessel, the ratio of water is 7 and the total of ratio is 11.\n
+Water Percentage in the vessel = Ratio of Water/ Total of Ratio×100\n
+= 7/11×100\n
+=63.63\n
+So, the percentage of water in the vessel is 63.63%.In the same, way you can also find out the percentage of water in the vessel.
+ \n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div7"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv77" />
+
+
+            <TextView
+                android:id="@+id/tv8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div7"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 8.\n
+8)If the Total Mixture in the vessel is 30 litre and the ratio of milk to water is 3:2. If a certain quantity of water is added further and the ratio of milk to water becomes 1:2. Find out how much quantity is water is added.
+"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv88"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv8"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+
+Quantity of milk = 30/5×3
+                       = 18\n
+Quantity of milk = 30/5×2
+                       = 12\n
+Quantity is water is added\
+18/12+X = 1/2\n
+36 = 12 + X\n
+36 – 12 = X\n
+X = 24\n
+So, the water added is 24 liter.
+.\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div8"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv88" />
+
+            <TextView
+                android:id="@+id/tv9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div8"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 9.\n
+The cost of Type 1 material is Rs. 15 per kg and Type 2 material is Rs.20 per kg. If both Type 1 and Type 2 are mixed in the ratio of 2 : 3, then what is the price per kg of the mixed variety of material?
+Answer:Option C? "
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv99"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tv9"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+Cost Price(CP) of Type 1 material is Rs. 15 per kg\n
+Cost Price(CP) of Type 2 material is Rs. 20 per kg\n
+
+Type 1 and Type 2 are mixed in the ratio of 2 : 3. \n
+
+Hence Cost Price(CP) of the resultant mixture \n
+=
+(15×2)+(20×3)/(2+3)\n
+
+=(30+60)/5=90/5=18\n
+
+=> Price per kg of the mixed variety of material = Rs.18
+ \n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121" />
+
+            <include
+                android:id="@+id/div9"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv99" />
+
+
+            <TextView
+                android:id="@+id/tv10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/div9"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Question 10.\n
+Rs.460 was divided among 41 boys and girls such that each boy got Rs.12 and each girl got Rs.8. What is the number of boys?
+?"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tv100"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv10"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_marginStart="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="8dp"
+                android:lineSpacingMultiplier="1.4"
+                android:text="Solution –\n
+                Assume that the number of boys = b and number of girls = g\n
+
+number of boys + number of girls = 41\n
+=> b + g = 41     ...(1)\n
+
+Given that each boy got Rs.12 and each girl got Rs.8. Then the total amount is Rs.460\n
+=> 12b + 8g = 460     ...(2)\n
+
+Now we need to solve these equations to get b and g.
+\n
+(1) × 8 => 8b + 8g = 8 × 41 = 328    ...(3)\n
+(2) - (3) => 4b = 460 - 328 = 132\n
+=> b =132/4=33
+ \n\n\n"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="#212121"/>
+
+            <include
+                android:id="@+id/div10"
+                layout="@layout/item_divider"
+                android:layout_width="match_parent"
+                android:layout_height="4dp"
+                android:layout_below="@id/tv100" />
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</FrameLayout>
